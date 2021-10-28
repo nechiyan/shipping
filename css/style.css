@@ -1,0 +1,526 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1100px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+header{
+	width: 100%;
+}
+header #top{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 25px 0;
+}
+header section #top div.left{
+	width: 8%;
+}
+section #top div.left a{
+
+}
+header section #top div.left a img{
+	display: block;
+	width: 100%;
+}
+header section #top div.Middle{
+
+}
+header section #top div.Middle ul{
+	display: flex;
+	justify-content: space-between;
+}	
+header section #top div.Middle ul li{
+	color: gray;
+	margin-right: 20px;
+}
+
+header section #top div.Middle ul li a{
+	
+}
+header section #top div.Middle ul li:last-child{
+	margin-right: 0px;
+}
+header section #top div.Middle ul li a:hover{
+	text-decoration: underline #160647;
+}
+header section #top div.right{
+
+}
+header section #top div.right ul{
+	display: flex;
+}
+header section #top div.right ul li{
+	margin-left: 30px;
+
+}
+header section #top div.right ul li:first-child{
+	margin-left: 0;
+}
+header section #top div.right ul li a{
+
+}
+header section #top div.right ul li a.button{
+	border: 2px solid #175cff;
+	padding: 10px 15px;
+    border-radius: 15px;
+	color:#175cff;
+	font-weight: 600;
+}
+header section #top div.right ul li a.button:hover{
+	color:#fff;
+	background: #175cff;
+}
+#spotlight{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+#spotlight div.middle{
+	display: flex;
+}
+#spotlight div.middle div.left{
+	width: 60%;
+}
+#spotlight div.left div.p h1{    
+	font-weight: bolder;
+    font-size: 60px;
+    width: 80%;
+    color: #0a080a;
+}
+#spotlight div.middle div.left div.p p{    
+	font-weight: 600;
+    color: #2a2929ab;
+    width: 50%;
+    margin: 30px 0;
+}
+#spotlight div.middle div.left div.p a.button{
+	
+	color: #fff;
+    background: #3b3bff;
+    border-radius: 30px;
+    padding: 15px 31px;
+    font-size: 14px;	
+}
+#spotlight div.middle div.left div.middle{
+	display: grid;
+	grid-template-areas:'img p';
+	justify-content: start;
+	grid-gap: 17px 20px;
+	align-items: center;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+#spotlight div.middle div.left div.middle img{
+
+}
+#spotlight div.middle div.left div.p a.button:hover{
+	color: black;
+	background: #fff;
+	border: 2px solid #3b3bff;
+}
+#spotlight div.middle div.right{
+	position: relative;
+	width: 50%;
+	
+}	
+#spotlight div.middle div.right div.bg{
+	width: 80%;
+}
+#spotlight div.middle div.right div.bg img{
+	display: block;
+    width: 30%;
+    z-index: 1;
+    position: absolute;
+    top: 323px;
+    right: 7px;
+   
+}
+#spotlight div.middle div.right div.img{
+	width: 80%;
+}
+#spotlight div.middle div.right div.img img{
+	display: block;
+    width: 65%;
+    z-index: 2;
+    position: absolute;
+    top: -17px;
+    right: 37px;
+}
+#spotlight div.middle div.right div.quote{
+	width: 10%;
+}
+#spotlight div.middle div.right div.quote img{
+	display: block;
+    width: 10%;
+    position: absolute;
+    z-index: 4;
+    top: 282px;
+    left: 20px;
+}
+#spotlight div.middle div.right div.text{
+	width: 60%;
+    background: #0a083a;
+    padding: 5%;
+    position: absolute;
+    z-index: 3;
+    top: 290px;
+	left: 45px;
+}
+#spotlight div.middle div.right div.text p{
+	color: #fff;
+   	font-size: 12px;
+	   
+}
+#spotlight div.middle div.right div.text h5{
+	color: #fff;
+    margin-top: 10px;
+}
+#spotlight div.middle div.right span.box{
+	background: #f1f1f1;
+    padding: 50%;
+    z-index: 0;
+    position: absolute;
+    right: -146px;
+	bottom: 0;
+}
+@media all and (max-width: 1280px){
+	#spotlight div.middle div.right div.bg img {
+		width: 40%;
+		top: 242px;
+	}
+	#spotlight div.middle div.right div.text {
+		width: 56%;
+		padding: 3%;
+		top: 251px;
+	}
+	#spotlight div.middle div.right div.quote img {
+		top: 234px;
+	}
+}
+@media all and (max-width: 1050px){
+	#spotlight div.middle div.right div.img img {
+		width: 65%;
+		right: -6px;
+	}
+	#spotlight div.middle div.right div.bg img {
+		width: 33%;
+		top: 246px;
+		left: 300px;
+	}
+	#spotlight div.middle div.right span.box {
+		display: none;
+	}
+	#spotlight div.middle div.right div.text {
+		width: 48%;
+		padding: 3%;
+		top: 248px;
+		left: 85px;
+	}
+	#spotlight div.middle div.right div.quote img {
+		left: 65px;
+		width: 9%;
+	}
+	#spotlight div.middle div.right {
+		margin-top: 80px;
+	}
+	#spotlight div.middle div.right div.text p {
+		font-size: 10px;
+	}
+	#spotlight div.middle div.right div.text h5 {
+		font-size: 13px;
+	}
+	#spotlight div.middle div.left div.middle {
+		grid-gap: 8px 12px;
+	}
+
+}
+@media all and (max-width: 980px){
+	header section #top div.Middle {
+		display: none;
+	}
+	#spotlight div.middle div.right div.img img {
+		width: 70%;
+		right: 16px;
+		top: -40px;
+	}
+	#spotlight div.middle div.right div.bg img {
+		width: 40%;
+		top: 67%;
+		left: 63%;
+	}
+	#spotlight div.left div.p h1 {
+		font-size: 40px;
+    	width: 63%;
+	}
+	#spotlight div.middle div.left div.middle {
+		grid-gap: 5px 7px;
+	}
+	#spotlight div.middle div.left div.p a.button {
+		padding: 10px 16px;
+		font-size: 13px;
+	}
+	#spotlight div.middle div.left div.p p {
+		width: 60%;
+    	margin: 20px 0;
+	}
+	#spotlight div.middle div.right div.text p {
+		font-size: 8px;
+	}
+	#spotlight div.middle div.right div.text h5 {
+		font-size: 12px;
+		margin-top: 5px	;
+	}
+	#spotlight div.middle div.right div.text {
+		top: 200px;
+		left: 30px;
+	}
+	#spotlight div.middle div.right div.quote img {
+		left: 17px;
+		width: 7%;
+		top: 193px;
+	}
+}
+@media all and (max-width: 768px){
+	header section #top div.left {
+		width: 10%;
+	}
+	header section #top div.right ul li {
+		margin-left: 15px;
+	}
+	#spotlight div.left div.p h1 {
+		font-size: 30px;
+		width: 57%;
+	}
+	#spotlight div.middle div.left div.p p {
+		width: 66%;
+	}
+	#spotlight div.middle div.left div.middle {
+		margin-top: 20px;
+	}
+	#spotlight div.middle div.right div.bg img {
+		width: 35%;
+	
+	}
+	#spotlight div.middle div.right div.text h5 {
+		font-size: 11px;
+		margin-top: 3px;
+	}
+	#spotlight div.middle div.right div.text {
+		top: 147px;
+		left: 25px;
+	}
+	#spotlight div.middle div.right div.quote img {
+		left: 16px;
+		width: 6%;
+		top: 143px;
+	}
+}
+@media all and (max-width: 640px){
+	header section #top div.left {
+		width: 12%;
+	}
+	#spotlight div.left div.p h1 {
+		font-size: 25px;
+		width: 65%;
+	}
+	#spotlight div.middle div.left div.p p {
+		width: 65%;
+		font-size: 11px;
+	}
+	p {
+		font-size: 12px;
+	}
+	#spotlight div.middle div.left div.middle img {
+		width: 60%;
+	}
+	#spotlight div.middle div.left div.middle {
+		grid-gap: 3px 0px;
+	}
+	header section #top div.right ul li a.button {
+
+	}
+	#spotlight div.middle div.right div.text {
+		width: 60%;
+	}
+	#spotlight div.middle div.right div.bg img {
+		width: 40%;
+		top: 91px;
+		left: 136px;
+	}
+	header section #top div.right ul li a.button {
+		padding: 3px 7px;
+	}
+	#spotlight div.middle div.right div.img img {
+		width: 90%;
+		right: -3px;
+		top: -95px;
+	}
+	#spotlight div.middle div.right div.text {
+		top: 66px;
+		left: -2px;
+	}
+	#spotlight div.middle div.right div.quote img {
+		left: -9px;
+		top: 62px;
+	}
+	#spotlight div.middle div.right {
+		margin-top: 113px;
+	}
+}
+@media all and (max-width: 480px){
+	#spotlight div.middle div.right div.text h5 {
+		font-size: 7px;
+		margin-top: 3px;
+	}
+	#spotlight div.middle div.right div.text p {
+		font-size: 6px;
+	}
+	#spotlight div.middle div.right div.text {
+		width: 60%;
+		top: 29px;
+		left: -2px;
+	}
+	#spotlight div.middle div.right div.quote img {
+		left: -7px;
+		top: 24px;
+	}
+	#spotlight div.middle div.right div.bg img {
+		width: 50%;
+		top: 34px;
+		left: 91px;
+	}
+	#spotlight div.middle div.left div.middle img {
+		width: 50%;
+	}
+	p {
+		font-size: 9px;
+	}
+	#spotlight div.middle div.right {
+			margin-top: 100px;
+			margin-bottom: 150px;
+			margin-top: 114px;
+	}
+	#spotlight div.middle div.left div.p p {
+		margin: 4px 0;
+	}
+	#spotlight div.middle div.left div.p a.button {
+		padding: 3px 7px;
+	}
+}
+@media all and (max-width: 360px){
+	#spotlight div.middle div.left {
+		width: 100%;
+	}
+	#spotlight div.middle {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	#spotlight div.middle div.right {
+		margin-top: 100px;
+		margin-bottom: 150px;
+		margin-top: 114px;
+	}
+	#spotlight div.middle div.right div.img img {
+		width: 90%;
+		right: -6px;
+	 	top: -114px;
+	}
+	#spotlight div.middle div.right div.bg img {
+		width: 78%;
+		top: 47px;
+		left: 97px;
+	}
+	#spotlight div.middle div.right {
+		width: 80%;
+		margin-bottom: 250px;
+	}
+	#spotlight div.middle div.right div.text {
+		top: 120px;
+	}
+	#spotlight div.middle div.right div.quote img {
+		left: -10px;
+		top: 115px;
+	}
+	header section #top div.left {
+		width: 17%;
+	}
+	#spotlight div.middle div.left div.p p {
+		margin: 10px 0;
+	}
+}
+
+
+
