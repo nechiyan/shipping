@@ -520,6 +520,9 @@ header section #top div.right ul li a.button:hover{
 	#spotlight div.middle div.left div.p p {
 		margin: 10px 0;
 	}
+	#spotlight div.middle div.left div.middle img {
+		width: 50%;
+	}
 }
 
 
